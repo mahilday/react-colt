@@ -26,7 +26,7 @@ class Anime extends Component {
   };
 
   updatePredicate = () => {
-    this.setState({ isMobile: window.innerWidth < 731 });
+    this.setState({ isMobile: window.innerWidth < 800 });
   };
   render() {
     return (
@@ -38,8 +38,8 @@ class Anime extends Component {
           </nav>
           <div className="d-flex mt-2 justify-content-center ">
             <Svgimage />
-            <div className="col-lg-7 col-md-8 col-sm-10 text-left  pt-5 writeup text-white">
-              <h1 className="col-md-12 text-center col-sm-10 col-12 p-3">
+            <div className="col-lg-7 col-md-8 col-sm-10 pt-5 writeup text-white">
+              <h1 className="col-md-12 text-center col-sm-10 col-12 p-2">
                 MAKE <span className="text-danger">ORDERS</span> THAT{" "}
                 <span className="text-danger">COUNT</span>
               </h1>
@@ -47,7 +47,7 @@ class Anime extends Component {
                 Lorem elit. Repellendus autem exercitationem in my heart of heart
               </p>
               <div className=" col-12">
-                <Link to="#" className="btn text-center orderbtn py-2">
+                <Link to="#" className="btn text-center orderbtn py-1">
                   Order Now
                 </Link>
               </div>

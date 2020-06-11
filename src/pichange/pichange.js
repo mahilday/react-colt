@@ -7,11 +7,11 @@ class Pichange extends Component {
         return (
           <div className="container pichange">
             <h3 className="text-center font-weight-bold"> Our Services </h3>
-            <div className="d-flex align-center pichange-content row">
-              <div className="col-6 col-xs-8">
+            <div className="pichange-content row">
+              <div className="col">
                 <img src={chicken} alt="igfood" />
               </div>
-              <p className="col-6 col-xs-8">
+              <p className="col text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
                 sit alias totam earum? Dicta amet saepe aliquid eveniet quo
                 similique totam earum. Cum, ut porro? Labore ea delectus aliquam
