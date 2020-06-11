@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding:0;
+    /* border:1px solid blue; */
+}
+.pichange{
+    margin-top:5%;
+}
+.pichange-content{
+    margin:5% 0;
+}
+.pichange-content img{
+    border-radius: 10%;
+    height:50vh;
+    width: 25vw;
+    display:flex;
+    margin: 0 25%;
+}
+.pichange-content p{
+    display:flex;
+    align-items: center;
+}
+@media screen and (max-width: 731px){
+    .pichange-content{
+        display: block;
+    }
+}

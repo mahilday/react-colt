@@ -1,38 +1,126 @@
-.App {
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  /* border:1px solid blue; */
+}
+.nopadding{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.animenav{
+  /* background-color: rgb(255, 169, 71); */
+  justify-content: space-between;
+}
+.ulanime{
+  padding:1.5% 2%;
+}
+.nopadding{
+  background: url('./assets/Subtract.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: local;
+  height:90vh;
+}
+.animelogo{
+  max-width:8rem;
+  padding:.2%;
+  padding-left:10%;
+  box-sizing: content-box;
+}
+.menu{
+   padding:20px;
+ }
+.writeup{
+  margin-left:10%;
+  margin-top: 10%;
+}
+.writeup h1{
+  font-size: 3.2rem;
+  font-weight: 300;
+}
+.image-svg{
+  flex: 0 0 40%;
+  width: 80%;
+  margin:2% -18%;
+  position: absolute;
+}
+.orderbtn{
+  background: linear-gradient(to bottom, red, rgb(92, 68, 68));
+  border:none;
+  color:whitesmoke;
+  margin:0 40%;
+  font-weight:400;
+  border-radius: 20px;
+  width:20%;
+}
+.readyfood{
+  border-radius: 15px;
+  box-shadow:2px 2px 20px #ccc;
+  margin:5% 0;
+}
+.horul{
+  width:50%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.readyfood-title{
+  margin:5% 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and  (max-width: 914px){
+  .animenav{
+    justify-content: space-around;
+  }
+  .nopadding{
+    height:55vh;
+  }
+  .image-svg{
+    width:60%;
+    margin:-10% 0%;
+  }
+  .ulanime{
+    max-width:70%;
+  }
+  .ulanime li{
+    padding: 7px 7px;
+  }
+  .writeup h1{
+    font-size: 2.0rem;
+  }
+}
+@media screen and (max-width: 1100px){
+  .nopadding{
+    height: 55vh;
+  }
+  .image-svg{
+    width:60%;
+    margin:0% -10%;
+  }
+}
+@media screen and (max-width: 731px){
+  .animelogo{
+    padding-left:2%;
+  }
+  .image-svg{
+    width:60%;
+    height:70%;
+    margin:-35% 0%;
+  }
+  .nopadding{
+    height:55vh;
+  }
+  .orderbtn{
+    margin:0 35%;
+    font-size: 12px;
+    width:40%;
+  }
+  .writeup h1{
+    font-size:1.6rem;
+  }
+  .writeup p{
+    font-size: 0.6rem;
+  }
+  .writeup{
+    margin-top:-1%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
