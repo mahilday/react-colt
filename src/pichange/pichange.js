@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import chicken from "../assets/chicken.jpg";
-import jollof from "../assets/jollof1.jpg";
-import soup1 from "../assets/soup1.jpg";
-import soup2 from "../assets/soup2.jpg";
-import soup3 from "../assets/soup3.jpg";
+
 
 import "./pichange.css";
 

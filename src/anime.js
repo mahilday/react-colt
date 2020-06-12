@@ -8,6 +8,11 @@ import { Link } from "react-router-dom";
 import ReactAnime from "react-animejs";
 import Readyfood from "./readyfood";
 import Pichange from "./pichange/pichange";
+import chicken from "./assets/chicken.jpg";
+import jollof from "./assets/jollof1.jpg";
+import soup1 from "./assets/soup1.jpg";
+import soup2 from "./assets/soup2.jpg";
+import soup3 from "./assets/soup3.jpg";
 
 class Anime extends Component {
   constructor(props) {
@@ -46,6 +51,7 @@ class Anime extends Component {
     this.setState({ isMobile: window.innerWidth < 800 });
   };
   render() {
+    const pics = [chicken, jollof, soup1, soup2, soup3];
     return (
       <div>
         <header className="container-fluid nopadding">
@@ -77,7 +83,7 @@ class Anime extends Component {
         </header>
         <main>
           <Readyfood />
-          <Pichange pics = {[chicken, jollof, soup1, soup2, soup3]}
+          <Pichange pics = {pics}
             randPic = {Math.floor(Math.random() * pics.length)} />
         </main>
       </div>
