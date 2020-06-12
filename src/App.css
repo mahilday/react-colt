@@ -12,6 +12,7 @@
   /* background-color: rgb(255, 169, 71); */
   justify-content: space-between;
   position: fixed;
+  z-index: 16;
 }
 .ulanime {
   padding: 2% 2%;
@@ -35,17 +36,21 @@
 }
 .navchange{
   position: relative;
-  margin:70% 10%;
+  margin:80% -80%;
   width:inherit;
   z-index: 15;
 }
+.scroll{
+  background: #7e1f1f;
+  transition: background .5s ease-in;
+}
 .menubad {
-  width: 20px;
-  height:20px
+  width: 15px;
+  height:15px
 }
 .writeup {
   color: white;
-  margin-top: 6%;
+  margin-top: 15%;
 }
 .writeup h1 {
   font-size: 3.2rem;
@@ -54,7 +59,7 @@
 .image-svg {
   flex: 0 0 40%;
   width: 30%;
-  margin: 2% 0%;
+  margin: 10% 0%;
   position: absolute;
 }
 .orderbtn {
@@ -70,6 +75,7 @@
   font-weight: 400;
   border-radius: 20px;
   width: 20%;
+  padding-top:10px;
 }
 .readyfood {
   border-radius: 15px;
@@ -95,9 +101,10 @@
  justify-content: center;
  top:0;
  left:50%;
+ background: whitesmoke;
 }
 .mobile-nav ul{
-  padding:40% 10%;
+  padding:40% 5%;
 }
 .mobile-nav ul li{
   margin:30% 0;
@@ -106,12 +113,33 @@
   .animenav {
     justify-content: space-around;
   }
+  .navchange{
+  position: relative;
+  margin:80% 200%;
+  width:inherit;
+  z-index: 15;
+}
+.mobile-nav {
+ width:30%;
+ position: fixed;
+ height:100vh;
+ z-index: 2;
+ display:flex;
+ justify-content: center;
+ top:0;
+ left:70%;
+ background: whitesmoke;
+}
+.menubad {
+  width: 20px;
+  height:20px
+}
   .nopadding {
     height: 55vh;
   }
   .image-svg {
     width: 60%;
-    margin: -10% 0%;
+    margin: 0% 0%;
   }
   .ulanime {
     max-width: 70%;
@@ -129,13 +157,13 @@
   }
   .image-svg {
     width: 40%;
-    margin: 5% -10%;
+    margin: 15% -10%;
   }
   .writeup h1 {
     font-size: 2.5rem;
   }
   .writeup {
-    margin-top: 15%;
+    margin-top: 25%;
   }
 }
 @media screen and (max-width: 790px) {
@@ -144,7 +172,7 @@
   }
   .image-svg {
     width: 30%;
-    margin: 0% 0%;
+    margin: 5% 0%;
   }
   .nopadding {
     height: 45vh;
@@ -155,7 +183,7 @@
   .orderbtn {
     margin: 2% 35%;
     font-size: 12px;
-    width: 30%;
+    width: 25%;
   }
   .writeup h1 {
     font-size: 1.6rem;
@@ -164,16 +192,44 @@
     font-size: 0.6rem;
   }
   .writeup {
-    margin-top: 10%;
+    margin-top: 15%;
   }
 }
 @media screen and (max-width: 590px) {
-  .animelogo {
-    padding-left: 2%;
-  }
+ .animelogo {
+  max-width: 5rem;
+  padding: 0.2%;
+  padding-left: 1.5rem;
+  box-sizing: content-box;
+}
+.navchange{
+  position: relative;
+  margin:80% -80%;
+  width:inherit;
+  z-index: 15;
+}
+.mobile-nav ul{
+  padding:40% 3%;
+}
+.mobile-nav {
+ width:50%;
+ position: fixed;
+ height:100vh;
+ z-index: 2;
+ display:flex;
+ justify-content: center;
+ top:0;
+ left:50%;
+ background: whitesmoke;
+}
+.menubad{
+  width: 15px;
+  height:15px;
+}
+
   .image-svg {
     width: 50%;
-    margin: -15% 5%;
+    margin: -10% 5%;
   }
   .orderbtn {
     width: 35%;
@@ -188,6 +244,6 @@
     font-size: 0.5rem;
   }
   .writeup {
-    margin-top: 2%;
+    margin-top: 17%;
   }
 }

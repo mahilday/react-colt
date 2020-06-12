@@ -27,9 +27,7 @@ class Mobilenav extends Component {
   render() {
     return (
       <div className="mobilewrapper">
-        <div className={
-            this.state.isOpen? "navchange": null
-        }>
+        <div className={this.state.isOpen ? "navchange" : null}>
           {this.state.isOpen ? (
             <img
               className="menubad"
@@ -46,13 +44,7 @@ class Mobilenav extends Component {
             />
           )}
         </div>
-        <div
-          className={
-            this.state.isOpen
-              ? "bg-light mobile-nav"
-              : "bg-light d-none mobile-nav "
-          }
-        >
+        <div className={this.state.isOpen ? "mobile-nav" : "d-none mobile-nav "}>
           <ul className=" list-unstyled">
             <li>
               <Link to="/" className="text-dark">
