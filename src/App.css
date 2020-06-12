@@ -11,6 +11,7 @@
 .animenav {
   /* background-color: rgb(255, 169, 71); */
   justify-content: space-between;
+  position: fixed;
 }
 .ulanime {
   padding: 2% 2%;
@@ -20,6 +21,7 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: local;
+  position: relative;
   height: 90vh;
 }
 .animelogo {
@@ -31,9 +33,15 @@
 .menu {
   padding: 20px;
 }
-.menubad {
+.navchange{
   position: relative;
-  z-index: 10;
+  margin:70% 10%;
+  width:inherit;
+  z-index: 15;
+}
+.menubad {
+  width: 20px;
+  height:20px
 }
 .writeup {
   color: white;
@@ -79,15 +87,17 @@
   max-height: 100vh;
 }
 .mobile-nav {
-  position: absolute;
-  z-index: 2;
-  width: 32.2%;
-  margin: -6% -10%;
-  height: 100vh;
-  background: whitesmoke;
+ width:50%;
+ position: fixed;
+ height:100vh;
+ z-index: 2;
+ display:flex;
+ justify-content: center;
+ top:0;
+ left:50%;
 }
 .mobile-nav ul{
-  padding:40% 20%;
+  padding:40% 10%;
 }
 .mobile-nav ul li{
   margin:30% 0;

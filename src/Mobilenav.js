@@ -27,29 +27,33 @@ class Mobilenav extends Component {
   render() {
     return (
       <div className="mobilewrapper">
-        {this.state.isOpen ? (
-          <img
-            className="dropdown menubad"
-            onClick={this.handleMenubadClick}
-            src={Menubad}
-            alt="menu"
-          />
-        ) : (
-          <img
-            className="dropdown menu"
-            onClick={this.handleMenuClick}
-            src={Menu}
-            alt="menu"
-          />
-        )}
+        <div className={
+            this.state.isOpen? "navchange": null
+        }>
+          {this.state.isOpen ? (
+            <img
+              className="menubad"
+              onClick={this.handleMenubadClick}
+              src={Menubad}
+              alt="menu"
+            />
+          ) : (
+            <img
+              className="menu"
+              onClick={this.handleMenuClick}
+              src={Menu}
+              alt="menu"
+            />
+          )}
+        </div>
         <div
           className={
             this.state.isOpen
-              ? "mobile-nav"
-              : "d-none mobile-nav "
+              ? "bg-light mobile-nav"
+              : "bg-light d-none mobile-nav "
           }
         >
-          <ul className="bg-light list-unstyled">
+          <ul className=" list-unstyled">
             <li>
               <Link to="/" className="text-dark">
                 <HomeRounded />
