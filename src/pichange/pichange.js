@@ -13,14 +13,16 @@ class Pichange extends Component {
   }
 
   handlePicChange = () => {
-    this.setState({
-      pichange: this.props.pics[this.props.randPic],
-    });
+      this.setState({
+        pichange: this.props.pics[this.props.randPic],
+      });
+    console.log(this.state.pichange)
   };
 
   render() {
     const { pics, randPic } = this.props;
-    setInterval(this.handlePicChange, 3000);
+    setInterval(this.handlePicChange, 100);
+
     return (
       <div className="container pichange">
         <h3 className="text-center font-weight-bold"> Our Services </h3>
@@ -41,6 +43,7 @@ class Pichange extends Component {
             id dolores quam!
           </p>
         </div>
+        <p className="text-center font-weight-bold text-secondary">Make an order &gt;&gt; </p>
       </div>
     );
   }

@@ -13,6 +13,8 @@ import jollof from "./assets/jollof1.jpg";
 import soup1 from "./assets/soup1.jpg";
 import soup2 from "./assets/soup2.jpg";
 import soup3 from "./assets/soup3.jpg";
+import Parallax from "./Parallax/Parallax"
+import Testimonials from './testimonials/Testimonials'
 
 class Anime extends Component {
   constructor(props) {
@@ -85,6 +87,8 @@ class Anime extends Component {
           <Readyfood />
           <Pichange pics = {pics}
             randPic = {Math.floor(Math.random() * pics.length)} />
+          <Parallax />
+          <Testimonials />
         </main>
       </div>
     );
