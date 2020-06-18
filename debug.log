@@ -1,3 +1,9 @@
 [0603/123100.145:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
 [0603/123101.130:ERROR:process_info.cc(556)] ReadMemoryInfo failed
 [0603/123101.888:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0618/200853.315:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0618/200852.924:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0618/200853.221:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0618/200853.409:ERROR:exception_snapshot_win.cc(98)] thread ID 7560 not found in process
+[0618/200853.409:ERROR:exception_snapshot_win.cc(98)] thread ID 6940 not found in process
+[0618/200853.409:ERROR:exception_snapshot_win.cc(98)] thread ID 5392 not found in process

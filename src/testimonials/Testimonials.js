@@ -1,24 +1,64 @@
-import React, { Component } from 'react';
-import './Testimonials.css'
-import woman from '../assets/soup1.jpg'
+import React, { Component } from "react";
+import "./Testimonials.css";
+import woman from "../assets/soup1.jpg";
 
 class Testimonials extends Component {
-    render() {
-        return (
-            <div className='d-flex testimonials-wrapper'>
-                <div className="text-center font-weight-bold">&lt;</div>
-                <div className="card">
-                    <img className='testimonials-img'src = {woman} alt='someone'/>
-                    <blockquote className='testimonials-bq'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto impedit ab consequatur velit qui incidunt voluptatibus esse natus eligendi reiciendis,
-                        ratione corrupti maiores vero, recusandae, quibusdam illum quos. Eum, minima.
-                    </blockquote>
-                    <small>Mathilda Imadojiemu</small>
-                </div>
-                <div className="text-center font-weight-bold">&gt;</div>
+  constructor(props) {
+    super(props);
+    this.state = {
+      testimonials: [
+        {
+          image: woman,
+          testimonial:
+            "lorem ipsum dolor sit adescimut elit. impedit ab consequatur velit qui incidunt voluptatibus esse natuseligendi reiciendis, ratione corrupti maiores vero, recusandae, quibusdam illum quos. Eum, minima.",
+          author: "Mathilda Imadojiemu",
+        },
+        {
+          image: woman,
+          testimonial:
+            "lorem ipsum dolor sit adescimut elit. impedit ab consequatur velit qui incidunt voluptatibus esse natuseligendi reiciendis, ratione corrupti maiores vero, recusandae, quibusdam illum quos. Eum, minima.",
+          author: "Mathilda Imadojiemu",
+        },
+        {
+          image: woman,
+          testimonial:
+            "lorem ipsum dolor sit adescimut elit. impedit ab consequatur velit qui incidunt voluptatibus esse natuseligendi reiciendis, ratione corrupti maiores vero, recusandae, quibusdam illum quos. Eum, minima.",
+          author: "Mathilda Imadojiemu",
+        },
+        {
+          image: woman,
+          testimonial:
+            "lorem ipsum dolor sit adescimut elit. impedit ab consequatur velit qui incidunt voluptatibus esse natuseligendi reiciendis, ratione corrupti maiores vero, recusandae, quibusdam illum quos. Eum, minima.",
+          author: "Mathilda Imadojiemu",
+        },
+        {
+          image: woman,
+          testimonial:
+            "lorem ipsum dolor sit adescimut elit. impedit ab consequatur velit qui incidunt voluptatibus esse natuseligendi reiciendis, ratione corrupti maiores vero, recusandae, quibusdam illum quos. Eum, minima.",
+          author: "Mathilda Imadojiemu",
+        },
+      ],
+    };
+  }
+  render() {
+      const {testimonials} = this.state
+    return (
+      <div>
+        <h3 className="text-center my-4">Testimonials</h3>
+      <div className="d-flex testimonials-wrapper">
+        {testimonials.map((testimonial)=>
+            <div className="testimonial-card">
+              <img className="testimonials-img" src={testimonial.image} alt="someone" />
+              <blockquote className="testimonials-bq">
+                {testimonial.testimonial}
+              </blockquote>
+              <small>{testimonial.author}</small>
             </div>
-        );
-    }
+        )}
+      </div>
+      </div>
+    );
+  }
 }
 
 export default Testimonials;

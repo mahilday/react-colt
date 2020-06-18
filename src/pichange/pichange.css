@@ -58,6 +58,7 @@
     .pichange-content p{
         max-width:100%;
         margin:0 auto;
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 590px){
