@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Link, Route } from 'react-router-dom';
-import { HomeRounded, ExploreRounded, InfoRounded, AccountCircleRounded, PersonAddRounded } from '@material-ui/icons'
+import { Link } from 'react-router-dom';
+import { HomeRounded, ExploreRounded, AccountCircleRounded, PersonAddRounded } from '@material-ui/icons'
 
 
 class Desktopnav extends Component{
