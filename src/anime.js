@@ -5,7 +5,7 @@ import Desktopnav from "./Desktopnav";
 import Mobilenav from "./Mobilenav";
 import Svgimage from "./Svgimage";
 import { Link } from "react-router-dom";
-import ReactAnime from "react-animejs";
+// import ReactAnime from "react-animejs";
 import Readyfood from "./readyfood";
 import Pichange from "./pichange/pichange";
 import chicken from "./assets/chicken.jpg";

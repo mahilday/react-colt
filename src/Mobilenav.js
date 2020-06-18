@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import {
   HomeRounded,
   ExploreRounded,
-  InfoRounded,
   AccountCircleRounded,
   PersonAddRounded,
 } from "@material-ui/icons";

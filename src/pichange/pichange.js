@@ -20,7 +20,7 @@ class Pichange extends Component {
   };
 
   render() {
-    const { pics, randPic } = this.props;
+    // const { pics, randPic } = this.props;
     setInterval(this.handlePicChange, 100);
 
     return (
