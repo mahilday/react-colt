@@ -43,8 +43,8 @@ class Testimonials extends Component {
   render() {
       const {testimonials} = this.state
     return (
-      <div>
-        <h3 className="text-center my-4">Testimonials</h3>
+      <div className ="test-margin">
+        <h3 className="text-center font-weight-bold my-4">Testimonials</h3>
       <div className="d-flex testimonials-wrapper">
         {testimonials.map((testimonial)=>
             <div className="testimonial-card">
