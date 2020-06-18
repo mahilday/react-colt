@@ -3,7 +3,7 @@ import ReactAnime from 'react-animejs'
 
 class Svgimage extends Component {
   render() {
-      const { Anime, stagger} = ReactAnime
+      const { Anime } = ReactAnime
     return (
       <Anime
         initial={[
