@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Eatme from './assets/eat-me.svg'
-import Credit from './assets/credit-card.png'
-import Quick from './assets/quicktime.png'
+import Eatme from '../assets/eat-me.svg'
+import Credit from '../assets/credit-card.png'
+import Quick from '../assets/quicktime.png'
 
 
 class Readyfood extends Component {
@@ -44,7 +44,7 @@ class Readyfood extends Component {
                   <img src={detail.image} className="my-3" alt="more" />
                   <div>
                     <p className="my-3">{detail.description}</p>
-                    <button className="btn btn-danger  my-3 px-5">
+                    <button className="btn my-3 btn-danger px-5">
                       {detail.btn}
                     </button>
                   </div>

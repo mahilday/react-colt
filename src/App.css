@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 * {
   padding: 0;
   margin: 0;
+  font-family:"Roboto", sans-serif;
   box-sizing: border-box;
   /* border:1px solid blue; */
 }
@@ -10,12 +12,29 @@
 }
 .animenav {
   /* background-color: rgb(255, 169, 71); */
-  justify-content: space-between;
   position: fixed;
+  clear:both;
+  width: 100%;
+  height:4rem;
+  justify-content: space-between;
   z-index: 16;
 }
 .ulanime {
   padding: 2% 2%;
+  font-size: 14px;
+  text-align: center;
+}
+.ulanime li{
+  text-align:center;
+}
+.ulanime li:hover a:hover{
+  text-decoration: none;
+}
+.ulanime li:hover a{
+  color:orangered;
+}
+.ulanime li:active{
+  background: #ccc;
 }
 .nopadding {
   background: url("./assets/Subtract.png");
@@ -26,8 +45,8 @@
   height: 90vh;
 }
 .animelogo {
-  max-width: 8rem;
-  padding: 0.2%;
+  max-width: 6rem;
+  height:100%;
   padding-left: 10%;
   box-sizing: content-box;
 }
@@ -112,6 +131,7 @@
 @media screen and (max-width: 914px) {
   .animenav {
     justify-content: space-around;
+    height: 3rem;
   }
   .navchange{
   position: relative;
@@ -164,6 +184,9 @@
   }
   .writeup {
     margin-top: 25%;
+  }
+  .animenav{
+    height: 4rem;
   }
 }
 @media screen and (max-width: 790px) {
@@ -245,5 +268,8 @@
   }
   .writeup {
     margin-top: 17%;
+  }
+  .animenav{
+    height:3.5rem;
   }
 }

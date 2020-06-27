@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Menu from "./assets/menu.svg";
-import Menubad from "./assets/menubad.svg";
+import Menu from "../../assets/menu.svg";
+import Menubad from "../../assets/menubad.svg";
 import { Link } from "react-router-dom";
 import {
   HomeRounded,
@@ -58,15 +58,15 @@ class Mobilenav extends Component {
               </Link>
             </li>
             <li>
-              <Link to="/" className="text-dark">
+              <Link to="/signup" className="text-dark">
                 <PersonAddRounded />
-                SignUp
+                Sign Up
               </Link>
             </li>
             <li>
-              <Link to="/" className="text-dark">
+              <Link to="/signin" className="text-dark">
                 <AccountCircleRounded />
-                SignIn
+                Sign In
               </Link>
             </li>
           </ul>

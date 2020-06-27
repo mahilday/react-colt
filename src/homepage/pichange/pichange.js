@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import chicken from "../assets/chicken.jpg";
+import chicken from "../../assets/chicken.jpg";
 
 
 import "./pichange.css";
@@ -12,15 +12,15 @@ class Pichange extends Component {
     };
   }
 
-  handlePicChange = () => {
-      this.setState({
-        pichange: this.props.pics[this.props.randPic],
-      });
-    console.log(this.state.pichange)
-  };
+  // handlePicChange = () => {
+  //     this.setState({
+  //       pichange: this.props.pics[this.props.randPic],
+  //     });
+  //   console.log(this.state.pichange)
+  // };
 
   render() {
-    setInterval(this.handlePicChange, 100);
+    // setInterval(this.handlePicChange, 100);
 
     return (
       <div className="container pichange">

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Testimonials.css";
-import woman from "../assets/soup1.jpg";
+import woman from "../../assets/soup1.jpg";
 
 class Testimonials extends Component {
   constructor(props) {

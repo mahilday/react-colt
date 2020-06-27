@@ -24,13 +24,13 @@ class Desktopnav extends Component {
           </Link>
         </li>
         <li className="col">
-          <Link className="text-white" to="/">
+          <Link className="text-white" to="/signup">
             <PersonAddRounded className="mx-2" />
             SignUp
           </Link>
         </li>
         <li className="col">
-          <Link className="text-white" to="/">
+          <Link className="text-white" to="/signin">
             <AccountCircleRounded className="mx-2" />
             Sign-in
           </Link>
