@@ -18,7 +18,7 @@ class Desktopnav extends Component {
           </Link>
         </li>
         <li className="col">
-          <Link className="text-white" to="/">
+          <Link className="text-white" to="/explore">
             <ExploreRounded className="mx-2" />
             Explore
           </Link>

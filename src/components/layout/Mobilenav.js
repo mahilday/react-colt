@@ -52,7 +52,7 @@ class Mobilenav extends Component {
               </Link>
             </li>
             <li>
-              <Link to="/" className="text-dark">
+              <Link to="/explore" className="text-dark">
                 <ExploreRounded />
                 Explore
               </Link>

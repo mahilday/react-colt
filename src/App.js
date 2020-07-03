@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import SignIn from "./components/auth/SignIn/SignIn";
 import SignUp from "./components/auth/signup/signup";
 import AddFood from "./components/layout/AddFood";
+import Explore from "./components/layout/Explore"
 
 function App() {
   const background = "#7e1f1f";
@@ -38,6 +39,15 @@ function App() {
               <div>
                 <Navbar background={background} {...props} />
                 <SignUp />
+              </div>
+            )}
+          />
+          <Route
+            path="/explore"
+            render={(props) => (
+              <div>
+                <Navbar background={background} {...props} />
+                <Explore /> 
               </div>
             )}
           />
