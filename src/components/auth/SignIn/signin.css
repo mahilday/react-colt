@@ -14,10 +14,10 @@
   border-color: tomato;
   transition: all .3s ease-in-out;
 }
-.signinwrapper h2 {
+/* .signinwrapper h2 {
   margin:0 auto;
   margin-top:15vh;
-}
+} */
 .signinwrapper form{
   width: 50%;
   margin: 5vh auto;

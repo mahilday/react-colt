@@ -31,7 +31,7 @@ class Anime extends Component {
                 heart
               </p>
               <div className=" col-12">
-                <Link to="#" className="btn text-center orderbtn py-1">
+                <Link to="/explore" className="btn text-center orderbtn py-2">
                   Order Now
                 </Link>
               </div>

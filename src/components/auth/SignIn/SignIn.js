@@ -25,8 +25,9 @@ class SignIn extends Component {
             style={{ height: "100vh" }}
             className="container-fluid signinwrapper card"
           >
-            <h2>Sign in</h2>
             <form className="desk" onSubmit={this.handleSubmit}>
+              <h3 className="my-3">Sign in</h3>
+              <hr/>
               <div className="form-group">
                 <label htmlFor="Email">
                   <h5>Email address:</h5>

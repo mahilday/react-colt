@@ -120,7 +120,7 @@
  justify-content: center;
  top:0;
  left:50%;
- background: whitesmoke;
+ background: #f5e2e2;
 }
 .mobile-nav ul{
   padding:40% 5%;
@@ -148,7 +148,6 @@
  justify-content: center;
  top:0;
  left:70%;
- background: whitesmoke;
 }
 .menubad {
   width: 20px;
@@ -221,6 +220,7 @@
 @media screen and (max-width: 590px) {
  .animelogo {
   max-width: 5rem;
+  min-width:5rem;
   padding: 0.2%;
   padding-left: 1.5rem;
   box-sizing: content-box;
@@ -243,7 +243,6 @@
  justify-content: center;
  top:0;
  left:50%;
- background: whitesmoke;
 }
 .menubad{
   width: 15px;
@@ -252,7 +251,7 @@
 
   .image-svg {
     width: 50%;
-    margin: -5% 5%;
+    margin: 5% 5%;
   }
   .orderbtn {
     width: 35%;
@@ -267,7 +266,7 @@
     font-size: 0.5rem;
   }
   .writeup {
-    margin-top: 17%;
+    margin-top: 30%;
   }
   .animenav{
     height:3.5rem;

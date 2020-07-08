@@ -27,8 +27,9 @@ class SignUp extends Component {
             style={{ height: "100vh" }}
             className="container-fluid signinwrapper card"
           >
-            <h2 className="font-weight-light">Sign up</h2>
             <form className="desk" onSubmit={this.handleSubmit}>
+              <h3 className="font-weight-light my-3">Sign up</h3>
+              <hr/>
               <div className="d-flex signupname row">
                 <div className="form-group col-12  col-sm-6 col-md-6 col-lg-6">
                   <label htmlFor="firstname">
