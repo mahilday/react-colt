@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Menu from "../../../../assets/menu.svg";
-import Menubad from "../../../../assets/menubad.svg";
 import { Link } from "react-router-dom";
 import {
   HomeRounded,
@@ -18,16 +16,24 @@ class Mobilenav extends Component {
   }
 
   handleMenuClick = () => {
-    this.setState({ isOpen: true });
+    if(this.state.isOpen){
+      this.setState({
+        isOpen:false
+      })
+    } else{
+       this.setState({
+     isOpen: true
+      })
+    }  
   };
-  handleMenubadClick = () => {
-    this.setState({ isOpen: false });
-  };
+  // handleMenubadClick = () => {
+  //   this.setState({ isOpen: false });
+  // };
   render() {
     return (
       <div className="mobilewrapper">
-        <div className={this.state.isOpen ? "navchange" : null}>
-          {this.state.isOpen ? (
+        <div onClick={this.handleMenuClick} className={this.state.isOpen ? "border navchange" : "border"}>
+          {/* {this.state.isOpen ? (
             <img
               className="menubad"
               onClick={this.handleMenubadClick}
@@ -41,7 +47,8 @@ class Mobilenav extends Component {
               src={Menu}
               alt="menu"
             />
-          )}
+          )} */}
+          <div className="menu-btn"></div>
         </div>
         <div
           className={this.state.isOpen ? "mobile-nav" : "d-none mobile-nav "}

@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Menu from "../../../../assets/menu.svg";
-import Menubad from "../../../../assets/menubad.svg";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { signOut } from "../../../../store/actions/authactions";
@@ -20,17 +18,24 @@ class Mobilenavin extends Component {
   }
 
   handleMenuClick = () => {
-    this.setState({ isOpen: true });
+    if(this.state.isOpen){
+      this.setState({
+        isOpen: true
+      })
+    } else{
+      this.setState({ isOpen: true });
+    }
+    
   };
-  handleMenubadClick = () => {
-    this.setState({ isOpen: false });
-  };
+  // handleMenubadClick = () => {
+  //   this.setState({ isOpen: false });
+  // };
   render() {
     const { signOut } = this.props;
     return (
       <div className="mobilewrapper">
-        <div className={this.state.isOpen ? "navchange" : null}>
-          {this.state.isOpen ? (
+        <div onClick={this.handleMenuClick} className={this.state.isOpen ? "navchange border" : "border"}>
+          {/* {this.state.isOpen ? (
             <img
               className="menubad"
               onClick={this.handleMenubadClick}
@@ -44,7 +49,8 @@ class Mobilenavin extends Component {
               src={Menu}
               alt="menu"
             />
-          )}
+          )} */}
+          <div className="menu-btn"></div>
         </div>
         <div
           className={this.state.isOpen ? "mobile-nav" : "d-none mobile-nav "}
