@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./components/layout/Navbar";
+import Navbar from "./components/layout/links/Navbar";
 import Anime from "./homepage/anime.js";
 import "./App.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";

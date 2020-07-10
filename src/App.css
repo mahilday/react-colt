@@ -20,9 +20,10 @@
   z-index: 16;
 }
 .ulanime {
-  padding: 2% 2%;
+  /* padding: 2% 2%; */
   font-size: 14px;
   text-align: center;
+  /* margin: 0 10rem; */
 }
 .ulanime li{
   text-align:center;
@@ -128,6 +129,12 @@
 .mobile-nav ul li{
   margin:30% 0;
 }
+.user{
+ background: rgb(207, 95, 29);
+ border-radius: 50%;
+ padding:15px 18px;
+ margin:8px 0;
+}
 @media screen and (max-width: 914px) {
   .animenav {
     justify-content: space-around;
@@ -153,6 +160,7 @@
   width: 20px;
   height:20px
 }
+
   .nopadding {
     height: 55vh;
   }
@@ -160,12 +168,12 @@
     width: 60%;
     margin: 0% 0%;
   }
-  .ulanime {
+  /* .ulanime {
     max-width: 70%;
   }
   .ulanime li {
     padding: 7px 7px;
-  }
+  } */
   .writeup h1 {
     font-size: 2rem;
   }

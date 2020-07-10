@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import './signin.css'
+import { connect } from 'react-redux'
+import { signIn } from '../../../store/actions/authactions'
 
 class SignIn extends Component {
     constructor(props){
@@ -17,9 +19,10 @@ class SignIn extends Component {
     }
     handleSubmit =(e)=>{
         e.preventDefault();
-        console.log(this.state)
+        this.props.signIn(this.state)
     }
     render() {
+      const { authError } = this.props;
         return (
           <div
             style={{ height: "100vh" }}
@@ -74,6 +77,7 @@ class SignIn extends Component {
                   Login
                 </button>
               </div>
+              { authError ? <p className='text-center mt-3 text-danger'>Login failed</p> : null}
               <div className="mt-5 d-flex justify-content-end">
                 <p className="text-muted small">
                   Don't have an account?
@@ -87,5 +91,16 @@ class SignIn extends Component {
         );
     }
 }
+const mapStateToProps =(state) =>{
+  return {
+    authError: state.auth.authError
+  }
+}
 
-export default SignIn;
+const mapDispatchToProps =(dispatch)=>{
+    return{
+      signIn: (creds) => dispatch(signIn(creds))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SignIn);

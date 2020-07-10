@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Menu from "../../assets/menu.svg";
-import Menubad from "../../assets/menubad.svg";
+import Menu from "../../../../assets/menu.svg";
+import Menubad from "../../../../assets/menubad.svg";
 import { Link } from "react-router-dom";
 import {
   HomeRounded,
@@ -43,7 +43,9 @@ class Mobilenav extends Component {
             />
           )}
         </div>
-        <div className={this.state.isOpen ? "mobile-nav" : "d-none mobile-nav "}>
+        <div
+          className={this.state.isOpen ? "mobile-nav" : "d-none mobile-nav "}
+        >
           <ul className=" list-unstyled">
             <li>
               <Link to="/" className="text-dark">
