@@ -14,7 +14,7 @@ class Explore extends Component {
     return (
       <div className="container explore card">
         <div className="row">
-          <form className="col-8 d-flex">
+          <form className="col-8 col-xs-10 d-flex">
             <input type="text" placeholder="Search" name="foodsearch" />
             <button className="btn search btn-danger">
               <Search className="searchicon" />

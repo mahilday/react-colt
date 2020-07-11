@@ -14,7 +14,7 @@
   /* background-color: rgb(255, 169, 71); */
   position: fixed;
   clear:both;
-  width: 100%;
+  width: 100vw;
   height:4rem;
   justify-content: space-between;
   z-index: 16;
@@ -40,7 +40,7 @@
 .nopadding {
   background: url("./assets/Subtract.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100vw 100%;
   background-attachment: local;
   position: relative;
   height: 90vh;
@@ -61,13 +61,13 @@
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255,101,47,.2);
   transition: all .5s ease-in-out;
-  margin:1.3rem 0;
+  margin:1.8rem 0;
 }
 .menu-btn::before,
 .menu-btn::after {
   content: '';
   position: absolute;
-  width:25px;
+  width:28px;
   height:2px;
   background: #fff;
   border-radius: 5px;
@@ -75,10 +75,10 @@
   transition: all .5s ease-in-out;
 }
 .menu-btn::before{
-  transform: translateY(-8px);
+  transform: translateY(-6px);
 }
 .menu-btn::after{
-  transform: translateY(8px);
+  transform: translateY(6px);
 }
 .navchange .menu-btn{
   transform:translateX(-30px);
@@ -93,9 +93,9 @@
 }
 .navchange{
   position: relative;
-  margin:80% -80%;
   width:inherit;
   z-index: 15;
+  cursor: pointer;
 }
 .scroll{
   background: #7e1f1f;
@@ -147,19 +147,25 @@
   margin: 5% 0;
 }
 .mobilewrapper {
-  max-height: 100vh;
+  min-height: 100vh;
 }
 .mobile-nav {
  width:50%;
  position: fixed;
- height:100vh;
+ min-height:100vh;
  z-index: 2;
  display:flex;
  justify-content: center;
  top:0;
  left:50%;
- background: #661616;
+ transform: translate(100%, 0);
+ background: #ccc;
+ transition: all .1s ease-in-out;
 }
+.translate{
+  transform: translate(-50%,0);
+}
+
 .mobile-nav ul{
   padding:40% 5%;
 }
@@ -311,7 +317,7 @@
     font-size: 0.5rem;
   }
   .writeup {
-    margin-top: 30%;
+    margin-top: 25%;
   }
   .animenav{
     height:3.5rem;

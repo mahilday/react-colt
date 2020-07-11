@@ -37,3 +37,18 @@
   height: 100%;
   left: 87.4%;
 }
+@media screen and (max-width: 590px){
+  .search{
+    border:none;
+    left:75%;
+  }
+  .searchicon{
+    top:-5px;
+  }
+  .foodsummary div img {
+  width: 10rem;
+  height: 14rem;
+  border-radius: 20px;
+  margin: 0 1.5rem;
+}
+}

@@ -32,7 +32,7 @@ class Mobilenav extends Component {
   render() {
     return (
       <div className="mobilewrapper">
-        <div onClick={this.handleMenuClick} className={this.state.isOpen ? "border navchange" : "border"}>
+        <div onClick={this.handleMenuClick} style={{cursor: "pointer"}} className={this.state.isOpen ? "navchange" : null}>
           {/* {this.state.isOpen ? (
             <img
               className="menubad"
@@ -51,7 +51,7 @@ class Mobilenav extends Component {
           <div className="menu-btn"></div>
         </div>
         <div
-          className={this.state.isOpen ? "mobile-nav" : "d-none mobile-nav "}
+          className={this.state.isOpen ? "mobile-nav translate" : "d-none mobile-nav "}
         >
           <ul className=" list-unstyled">
             <li>
