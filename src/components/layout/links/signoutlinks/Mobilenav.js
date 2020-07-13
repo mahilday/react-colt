@@ -51,7 +51,7 @@ class Mobilenav extends Component {
           <div className="menu-btn"></div>
         </div>
         <div
-          className={this.state.isOpen ? "mobile-nav translate" : "d-none mobile-nav "}
+          className={this.state.isOpen ? "mobile-nav translate" : "d-none mobile-nav opennot"}
         >
           <ul className=" list-unstyled">
             <li>

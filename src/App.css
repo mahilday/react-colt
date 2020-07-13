@@ -55,21 +55,21 @@
   padding: 20px;
 }
 .menu-btn{
-  width:20px;
-  height:2px;
-  background: #fff;
+  width:18px;
+  height:1.3px;
+  background: whitesmoke;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255,101,47,.2);
   transition: all .5s ease-in-out;
-  margin:1.8rem 0;
+  margin:2rem 0;
 }
 .menu-btn::before,
 .menu-btn::after {
   content: '';
   position: absolute;
-  width:28px;
-  height:2px;
-  background: #fff;
+  width:22px;
+  height:1.3px;
+  background: whitesmoke;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255,101,47,.2);
   transition: all .5s ease-in-out;
@@ -86,14 +86,14 @@
   box-shadow: none;
 }
 .navchange .menu-btn::before{
-  transform: rotate(45deg) translate(25px, -25px);
+  transform: rotate(45deg) translate(50px, -50px);
+  background:black;
 }
 .navchange .menu-btn::after{
-  transform: rotate(-45deg) translate(25px, 25px);
+  transform: rotate(-45deg) translate(50px, 50px);
+  background: black;
 }
 .navchange{
-  position: relative;
-  width:inherit;
   z-index: 15;
   cursor: pointer;
 }
@@ -158,12 +158,34 @@
  justify-content: center;
  top:0;
  left:50%;
- transform: translate(100%, 0);
- background: #ccc;
- transition: all .1s ease-in-out;
+ /* transform: translateX(50%); */
+ background: rgb(255, 255, 255);
+ /* animation: slidenav 1s linear; */
+}
+.opennot{
+  animation: slidenav 1s linear;
 }
 .translate{
-  transform: translate(-50%,0);
+  /* transform: translate(-50%,0); */
+   animation: slidenavoff .5s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+@keyframes slidenavoff{
+  from{
+    transform: translateX(50%)
+  }
+  to{
+    transform: translateX(0%)
+  }
+}
+
+@keyframes slidenav{
+  from{
+    transform: translateX(0%)
+  }
+  to{
+    transform: translateX(50%)
+  }
 }
 
 .mobile-nav ul{
@@ -171,6 +193,13 @@
 }
 .mobile-nav ul li{
   margin:30% 0;
+  padding:10px;
+  /* border-bottom-right-radius:50%; */
+  /* border-color: rgba(255,0,0,0.5); */
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.mobile-nav ul li:hover a:hover{
+  color: #7e1f1f;
 }
 .user{
  background: rgb(207, 95, 29);
@@ -185,7 +214,7 @@
   }
   .navchange{
   position: relative;
-  margin:80% 200%;
+
   width:inherit;
   z-index: 15;
 }
