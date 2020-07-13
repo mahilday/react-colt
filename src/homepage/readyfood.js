@@ -35,10 +35,10 @@ class Readyfood extends Component {
         return (
           <div>
             <h3 className ="readyfood-title text-center font-weight-bold">Just Follow These Steps</h3>
-            <div className="container mt-5 d-lg-flex d-md-flex d-block">
+            <div className=" readywrapper mt-5">
               {this.state.details.map((detail) => (
                 <div
-                  className="col readyfood text-center mx-lg-5 mx-md-4 p-3 py-5"
+                  className="readyfood text-center mx-lg-5 mx-md-4 p-3 py-3"
                   key={detail.id}
                 >
                   <img src={detail.image} className="my-3" alt="more" />

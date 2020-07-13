@@ -1,5 +1,5 @@
 .foodsummary div img {
-  width: 18rem;
+  width: 20rem;
   height: 22rem;
   border-radius: 20px;
   margin: 0 1.5rem;
@@ -7,10 +7,14 @@
 .foodsummary {
   margin: 5% 0;
 }
+.foodsummary h3{
+  font-size: 20px;
+}
 .foodlist {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
+  flex-shrink: 1;
   justify-content: center;
   align-items: center;
 }
