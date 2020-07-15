@@ -38,7 +38,7 @@ class Explore extends Component {
     return (
       <div className="container explore card">
         <div className="row">
-          <form className="col-8 col-xs-10 d-flex">
+          <form className="col-10 col-sm-8 mb-5 col-xs-12 d-flex">
             <input
               type="text"
               placeholder="Search"
@@ -46,12 +46,14 @@ class Explore extends Component {
               onChange={(event) => this.updateQuery(event.target.value)}
               name="foodsearch"
             />
-            <button 
-            onClick={(event) =>{ 
-              event.preventDefault()
-               let input = document.querySelector('input').value
-              this.updateQuery(input)}} 
-              className="btn search btn-danger">
+            <button
+              onClick={(event) => {
+                event.preventDefault();
+                let input = document.querySelector("input").value;
+                this.updateQuery(input);
+              }}
+              className="btn search btn-danger"
+            >
               <Search className="searchicon" />
             </button>
           </form>
