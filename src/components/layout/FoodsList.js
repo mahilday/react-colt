@@ -10,7 +10,7 @@ class FoodsList extends Component {
             show: false
         }
     }
-    showModal=()=>{
+    showModal=(e)=>{
         if(this.state.show){
             this.setState({
               show: false,
@@ -19,6 +19,7 @@ class FoodsList extends Component {
             this.setState({
                 show: true
             })
+            console.log(e)
         }
         
     }
